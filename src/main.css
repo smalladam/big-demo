@@ -1,0 +1,108 @@
+.content-wrap{
+  height:100vh;
+  display:flex;
+  flex-direction: column;
+}
+.nav-header{
+  height:60px;
+  background-color:#00bcd4;
+  flex-direction: 0;
+  flex-shrink: 0;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:0 20px;
+  color:#ffffff;
+}
+.nav-header h3{
+  margin:0;
+  font-weight: 650;
+  font-family: "微软雅黑";
+  text-align: center;
+}
+.nav-header p{
+  margin:0;
+  cursor:pointer;
+}
+.nav-header span{
+  font-size: 22px;
+  background-color: rgba(0, 0, 0, 0.06);
+  padding:4px 7px;
+  border-radius: 8px;
+}
+
+@media screen and (min-width:760px) {
+   .content-wrap{
+     flex-direction: row;
+   }
+   .Left-Nav{
+     width:200px;
+     flex-shrink: 0;
+     display: flex;
+     flex-direction: column;
+     background-color: #00bcd4;
+     font-size: 18px;
+
+   }
+   .Left-Nav h3{
+    font-size: 22px;
+    color:#ffffff;
+    margin:0 0 20px 0;
+    padding:20px 0;
+    text-align:center;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+   }
+   .left-nav span{
+     font-size: 28px;
+     padding:4px 7px;
+     border-radius: 8px;
+     text-shadow: 3px 3px 0 rgba(0,0,0,0.1);
+   }
+   .left-nav a{
+    height: 80px;
+    transition: all 0.2s;
+    cursor:pointer;
+    padding:25px 30px;
+    color:#ffffff;
+  }
+  .left-nav a:hover{
+    text-decoration: none;
+    border-left: 3px solid #673AB7;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .left-nav a:link,.left-nav a:visited,.left-nav a:hover,.left-nav a:active{color:#ffffff;text-decoration: none;}
+}
+.nav-footer{
+  height:60px;
+  background-color: #00bcd4;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  color:#ffffff;
+  font-size: 20px;
+}
+.nav-footer p{
+  flex-grow: 1;
+  margin:0;
+}
+.nav-footer a{
+  text-decoration: none;
+  flex-grow: 1;
+  text-align: center;
+  padding-top: 20px;
+  color:#ffffff;
+  border-right: 1px solid rgba(0, 0, 0, 0.3);
+}
+.footer a:link,.footer a:visited,.footer a:hover,.footer a:active{color:#ffffff;text-decoration: none;}
+
+.footer span{
+  font-size:20px;
+}
+
+.content-main{
+  background-color: #ffffff;
+  flex-grow: 1;
+  overflow-y:scroll;
+}
